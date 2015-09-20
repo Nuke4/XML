@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tns:medicines xmlns:tns="http://www.example.com/Medicines"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://www.example.com/Medicines medicine.xsd ">
+    <medicine name="citramon">
+        <price>20</price>
+        <dosage>5</dosage>
+        <visual>
+            <color>Белый</color>
+            <consistency>Твёрдый</consistency>
+            <indications>Головные боли</indications>
+        </visual>
+    </medicine>
+    <medicine name="tempalgin">
+        <price>100</price>
+        <dosage>5</dosage>
+        <visual>
+            <color>Серый</color>
+            <consistency>Твёрдый</consistency>
+            <indications>Зубная боль</indications>
+        </visual>
+    </medicine>
+    <medicine name="ambroksan">
+        <price>300</price>
+        <dosage>100</dosage>
+        <visual>
+            <color>Зелёный</color>
+            <consistency>Жидкий</consistency>
+            <indications>Респираторные заболевания</indications>
+        </visual>
+    </medicine>
+    <medicine name="ultramorin">
+        <price>500</price>
+        <dosage>10</dosage>
+        <visual>
+            <color>Красный</color>
+            <consistency>Твёрдый</consistency>
+            <indications>Психические заболевания</indications>
+        </visual>
+    </medicine>
+</tns:medicines>
+
+
+
+

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/Medicines"
+        xmlns:tns="http://www.example.com/Medicines">
+
+        <element name="medicines">
+            <complexType>
+                <sequence>
+                    <element name="medicine" type="tns:Medicine" minOccurs="1"
+                                maxOccurs="unbounded" />
+                </sequence>
+            </complexType>
+        </element>
+        <complexType name="Medicine">
+            <sequence>
+                <element name="price" type="int" />
+                <element name="dosage" type="int" />
+                <element name="visual" type="tns:Visual" />
+            </sequence>
+            <attribute name="name" type="tns:Name" use="required"/>
+        </complexType>
+
+        <simpleType name="Name">
+            <restriction base="ID">
+                <pattern value="[a-zA-Z]{3}[a-zA-Z0-9_]*"/>
+            </restriction>
+        </simpleType>
+
+        <complexType name="Visual">
+            <sequence>
+                <element name="color" type="string"></element>
+                <element name="consistency" type="string"></element>
+                <element name="indications" type="string"></element>
+            </sequence>
+        </complexType>
+</schema>
